@@ -2,33 +2,39 @@
 
 A production-oriented AI backend application that improves the naturalness, readability, and human-like flow of AI-generated text using Large Language Models (LLMs) combined with deterministic post-processing.
 
-This project focuses on applied NLP system design, not gimmicks — combining probabilistic LLM outputs with rule-based control for consistent, explainable results.
+This project focuses on applied NLP system design, not gimmicks — combining probabilistic LLM outputs with rule-based control for consistent and explainable results.
 
 🚀 Project Overview
 
 Modern AI systems generate text quickly, but the output often sounds repetitive, robotic, or overly generic.
+
 The Text Naturalization Engine addresses this problem by rewriting AI-generated content to make it sound more natural and human-written while preserving the original meaning.
 
-The system is designed as a clean backend service with a lightweight frontend for demonstration.
+The system is designed as a clean backend service with a lightweight frontend for demonstration and testing.
 
 🎯 Key Features
-
 ✍️ AI-Assisted Text Rewriting
+
 Uses Groq-hosted LLMs to rewrite text with improved flow and clarity.
 
 🧩 Prompt-Engineered Control
+
 Dedicated prompt templates ensure consistent rewriting behavior and tone control.
 
 🛠️ Deterministic Post-Processing
+
 Rule-based cleanup layer removes common AI artifacts and normalizes sentence structure.
 
 🎛️ Tone Selection
+
 Supports neutral, casual, and formal rewriting styles.
 
 ⚙️ Clean Backend Architecture
+
 Modular FastAPI design with clear separation of concerns.
 
 🌐 Lightweight Frontend Demo
+
 Simple HTML/CSS/JS interface for easy testing and demonstration.
 
 🏗️ System Architecture
@@ -89,10 +95,12 @@ text-naturalization-engine/
 ├── requirements.txt
 └── README.md
 ```
+
 ⚙️ Setup & Run Locally
 
 1️⃣ Clone the repository
 git clone https://github.com/your-username/text-naturalization-engine.git
+
 cd text-naturalization-engine
 
 2️⃣ Create and activate virtual environment
@@ -113,27 +121,22 @@ uvicorn app.main:app --reload
 
 6️⃣ Run the frontend
 
-Open:
+Open the following file in your browser:
 
 frontend/index.html
 
-
-in your browser.
-
 📌 API Usage Example
+Endpoint
 
-Endpoint: POST /humanize
+POST /humanize
 
-Request:
-
+Request
 {
   "text": "This is an AI generated paragraph that sounds very generic and robotic.",
   "tone": "casual"
 }
 
-
-Response:
-
+Response
 {
   "humanized_text": "So you want to know about this AI-generated paragraph. It feels generic and robotic, lacking any real personality or natural flow."
 }
@@ -150,7 +153,7 @@ System design over one-off prompts
 
 Ethical AI usage over detection bypass claims
 
-The goal is to demonstrate how AI systems can be engineered responsibly for real-world use.
+The goal is to demonstrate how AI systems can be engineered responsibly and realistically for real-world use.
 
 📈 Future Enhancements
 
@@ -160,7 +163,7 @@ Sentence-level variance analysis
 
 Authentication & rate limiting
 
-Deployment with public demo URL
+Deployment with a public demo URL
 
 Logging and monitoring for output quality
 
