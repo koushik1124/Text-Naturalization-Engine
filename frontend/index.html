@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Text Naturalization Engine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Text Naturalization Engine</h1>
+    <p class="subtitle">
+      Improve the readability and natural flow of AI-generated text.
+    </p>
+
+    <label for="inputText">Input Text</label>
+    <textarea id="inputText" placeholder="Paste AI-generated text here..."></textarea>
+
+    <div class="controls">
+      <label for="tone">Tone</label>
+      <select id="tone">
+        <option value="neutral">Neutral</option>
+        <option value="casual">Casual</option>
+        <option value="formal">Formal</option>
+      </select>
+
+      <button onclick="humanizeText()">Humanize</button>
+    </div>
+
+    <label for="outputText">Humanized Output</label>
+    <textarea id="outputText" readonly placeholder="Humanized text will appear here..."></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
