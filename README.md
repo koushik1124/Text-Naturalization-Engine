@@ -38,6 +38,7 @@ Modular FastAPI design with clear separation of concerns.
 Simple HTML/CSS/JS interface for easy testing and demonstration.
 
 🏗️ System Architecture
+```text
 User Input
    ↓
 FastAPI Backend
@@ -49,7 +50,7 @@ Groq LLM (Text Rewriting)
 Post-Processing Rules
    ↓
 Humanized Output
-
+```
 
 This hybrid design ensures:
 
