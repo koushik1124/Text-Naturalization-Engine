@@ -90,6 +90,7 @@ text-naturalization-engine/
 └── README.md
 ```
 ⚙️ Setup & Run Locally
+
 1️⃣ Clone the repository
 git clone https://github.com/your-username/text-naturalization-engine.git
 cd text-naturalization-engine
